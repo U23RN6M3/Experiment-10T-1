@@ -5,3 +5,4 @@
 - [x] HTML
 - [ ] CSS
 - [ ] Assets
+- [ ] Automated Scripts
