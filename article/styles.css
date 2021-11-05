@@ -1,0 +1,134 @@
+@font-face {
+    font-family: defaultFont;
+    src: url(assets/defaultFont.ttf);
+
+    /* Wtf this */
+}
+
+body {
+    cursor: default;
+    font-family: defaultFont;
+    color: white;
+    background-color: rgb(15, 15, 15);
+    font-size: 35px;
+}
+
+#body {
+    width: 60%;
+    margin: auto;
+}
+
+#main {
+    border: 2px solid lime;
+    background-color: black;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+h1, h2, h3 {
+    color: lime;
+}
+
+a, .dropdown-text {
+    text-decoration: none;
+    color: rgb(255, 251, 0);
+}
+
+kbd {
+    font-family: defaultFont;
+    border-radius: 2px;
+    padding: 2px;
+    border: 1px solid lime;
+    background-color: rgb(39, 39, 39);
+    color: lime;
+    font-size: 20px;
+}
+
+
+
+div {
+    margin-bottom: 30px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(12, 12, 12);
+    border: 1px solid lime;
+    padding: 12px;
+    z-index: 5;
+    font-size: 25px;
+    width: 300px;
+}
+
+.dropdown:hover {
+    cursor: help;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #333333; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(91, 255, 50); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(59, 160, 34); 
+}
+
+@media only screen and (max-width: 790px) {
+    #body {
+        width: 90%;
+    }
+
+
+}
+
+@media only screen and (max-width: 520px) {
+    #body {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 445px) {
+    .dropdown-content {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 385px) {
+    .dropdown-content {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .dropdown-content {
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+
+}
+
+@media only screen and (max-width: 270px) {
+    .title {
+        display: none;
+    }
+}
